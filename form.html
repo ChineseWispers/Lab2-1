@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      hr {
+        width:50%;
+        color: gray;
+        text-align: left;
+        margin-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/form.html">Form</a>
+      </nav>
+    </header>
+    <main>
+      <form method="POST" action="http://localhost:3000/profile">
+        <h2>Account Registration</h2>
+        <hr><br>
+        <div>
+          <label for="uname">Username:</label>
+          <input type="text" id="uname" name="uname"><br><br>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password"><br><br>
+        </div>
+        <hr><br>
+        <div>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+        </div>
+        <div>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+        </div>
+        <br>
+        <div>
+          <input type="radio" id="marketing_yes" name="marketing" value="marketing_yes">
+            <label for="marketing_yes">Please send me marketing emails</label><br>
+            <input type="radio" id="notifications_only" name="marketing" value="notifications_only">
+            <label for="notifications_only">Please send me notification emails only</label><br>
+            <input type="radio" id="no_emails" name="marketing" value="no_emails">
+            <label for="no_emails">Please don't send me any emails</label>
+        </div>
+        <br>
+        <div>
+          <input type="checkbox" id="casual" name="casual" value="Casual">
+          <label for="interest1"> I am a casual bird enthusiast</label><br>
+          <input type="checkbox" id="wildlife" name="wildlife" value="Wildlife">
+          <label for="interest2"> I am a wildlife carer</label><br>
+          <input type="checkbox" id="vet" name="vet" value="Vet">
+          <label for="interest3"> I am a veterinerian</label><br>
+          <input type="checkbox" id="photog" name="photog" value="Photographer">
+          <label for="interest4"> I am a photographer/birder</label><br>
+        </div>
+        <br>
+        <div>
+          <label for="option">Choose an option:</label>
+            <select name="option" id="option">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+        <br><br>
+      </form>
+  
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
